@@ -69,26 +69,19 @@ pip install simplejson urllib urllib2
 4. 添加示警媒介
 ```text
 Administration --> Media types --> create media types
-
-Name: To_WeChat
-Type: Script
-Script name: sendwechat.py
-Script parameters: {ALERT.SENDTO}
-Script parameters: {ALERT.SUBJECT}
-Script parameters: {ALERT.MESSAGE}
 ```
+![微信报警媒介](img/微信报警媒介.png)
 
 5. 为用户添加示警媒介
 ```text
 Administration --> Users --> User group --> Create user
-
-单击刚刚创建的User,选择Media,添加预警用户
-Type: To_WeChat
-Sendto: {WechatID}  注意这里填写的是企业号通讯录部门ID
-其它默认
 ```
+![用户报警媒介](img/用户报警媒介.png)
 
 6. 设置Action
 ```text
 Configuration --> Actions --> Event Sources(Triggers) --> Create Action
 ```
+![Tigger.Action](img/Tigger.Action.png)
+![Tigger.operations](img/Tigger.operations.png)
+![Tigger.recovery.operations](img/Tigger.recovery.operations.png)
